@@ -3,7 +3,7 @@
 }
 .nav {
 display: flex;
-background-color: orange;
+background-color: black;
 padding: 20px;
 justify-content: center;
 }
@@ -13,4 +13,11 @@ justify-content: center;
 }
 .type{
 	color: lime;
+}
+.table{
+	border: 1px solid black; 
+	border-collapse: collapse;
+}
+.table tr td,th{
+	padding: 7px;
 }
