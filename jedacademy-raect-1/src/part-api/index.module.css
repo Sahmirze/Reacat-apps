@@ -1,0 +1,16 @@
+.center{
+	text-align: center;
+}
+.nav {
+display: flex;
+background-color: orange;
+padding: 20px;
+justify-content: center;
+}
+.nav li{
+	margin: 5px;
+	cursor: pointer;
+}
+.type{
+	color: lime;
+}
