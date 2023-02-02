@@ -12,7 +12,7 @@ function Show(props){
 			{props.text}
 
 		</div> */}
-		<button onClick={props.clickleyende} >ok</button>
+		<button onClick={props.clickleyende} >{props.text}</button>
 		</>
 	)
 }

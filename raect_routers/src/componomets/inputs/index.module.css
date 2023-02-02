@@ -12,3 +12,6 @@ margin-top: 10px;
 .form input{
 	outline: none;
 }
+.togglewidth{
+	padding:0 20px 0 20px ;
+}
