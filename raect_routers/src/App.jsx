@@ -1,6 +1,7 @@
 import Requsets from "componomets/24fullrequestapi";
 import Show from "componomets/props";
 import States from "componomets/inputs";
+import { Route, Routes } from "react-router-dom";
 function App() {
   return (
    <>
@@ -8,7 +9,10 @@ function App() {
     console.log("click me")
    }} textAlign="center"  color="red" text="Türkün isteyib ede bilmeyeceyi iki sey var. Qalan her bir seyi turkler ede biler" />
     */}
-   <States />
+    <Routes>
+      <Route path="/states"  element={ <States />}/>
+    </Routes>
+  
    
    </>
   );
