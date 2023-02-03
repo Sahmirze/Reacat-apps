@@ -4,20 +4,20 @@ import {  useState } from 'react'
 
 	
 
-function States(props){
+function States({size}){
 	const [input,setInput]=useState({
 		name:"",
 		surname:""
 	})
-	const  [color,setColor]=useState('black')
-	console.log(props.color)
+
+	
 
 	return(
 	
 		<>
 			<div className={`${styles.form}`}>
 				<div>
-					<input  className={`togglewidth`} value={input.name} type="text"  onChange={({target})=>{
+					<input style={{padding:`${size}px !important`}}  className={`togglewidth`} value={input.name} type="text"  onChange={({target})=>{
 			
 						setInput({...input,name:target.value})
 					}}/>	
@@ -47,7 +47,7 @@ function States(props){
 	
 }
 	function UpperAndSize(name,surname){
-	
+	< States size={"40px"} />
 		if(name==="" || surname===""){
 			name='Siz Niye Adinizi Bos Saxlayirsin 😡'
 			surname='Siz Niye Soyadiniz Bos Saxlayirsin 😡'
