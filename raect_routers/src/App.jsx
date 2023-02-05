@@ -9,9 +9,10 @@ function App() {
     console.log("click me")
    }} textAlign="center"  color="red" text="Türkün isteyib ede bilmeyeceyi iki sey var. Qalan her bir seyi turkler ede biler" />
     */}
-    <SecondComponoment />
+   <SecondComponoment />
+
     {/* <Routes>
-      <Route path="/states"  element={ <FirstComponoment value={value} />}/>
+      <Route path="/states"  element={  <SecondComponoment/>}/>
     </Routes> */}
   
    

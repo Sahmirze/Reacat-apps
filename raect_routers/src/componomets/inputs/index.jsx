@@ -1,15 +1,14 @@
 import { useState } from "react"
 import styles from "./index.module.css"
-export const FirstComponoment=({value,targetNameChange})=>{
-
+export const FirstComponoment=(props)=>{
 	return(
 		<>
 		<div className={styles.form}>
-			<input value={value} type="text" name="name" onChange={targetNameChange}  />
-			<div>{value}</div>
+			<input value={props.name} type="text" name="ad" onChange={props.targetNameChange}  />
+			<div>{props.value}</div>
 			{/* <input type="text" name="surname"  /> */}
 			<button onClick={()=>{
-				console.log(value)
+				console.log(props.value)
 			}}>ok</button>
 		</div>
 		</>
@@ -27,7 +26,7 @@ const targetNameChange=({target})=>{
 }
 	return(
 		<>
-		<FirstComponoment value={value} targetChange={targetNameChange} />
+		<FirstComponoment value={value} targetChange={targetNameChange} name={value.name} />
 		</>
 	)
 }
