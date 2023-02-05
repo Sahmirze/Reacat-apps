@@ -1,7 +1,7 @@
 import { useState } from "react"
 import styles from "./index.module.css"
 export const FirstComponoment=(props)=>{
-	const [input,setInput]=useState({
+	const [deyer,setDeyer]=useState({
 		ad:props.name,
 		soyad:props.surname
 	})
@@ -10,17 +10,13 @@ export const FirstComponoment=(props)=>{
 		<>
 
 		<div className={styles.form}>
-			 <input value={input.ad} type="text" name="ad"  onChange={({target})=>{
-					setInput({...input,ad:target.value})
+			<input value={deyer.ad} type="text" name="ad"  onChange={({target})=>{
+					setDeyer({...deyer,ad:target.value})
 			}} />
-			
-			<div>{props.surname}</div>
-			<input value={input.soyad} type="text" name="surname" onChange={({target})=>{
-				setInput({...input,soyad:target.value})	
-			}}  />
-
+			<div>{props.value}</div>
+			{/* <input type="text" name="surname"  /> */}
 			<button onClick={()=>{
-				console.log(input.ad,input.soyad)
+				console.log(props.value)
 			}}>ok</button>
 		</div>
 		</>
@@ -33,15 +29,10 @@ export const SecondComponoment=()=>{
 		surname:""
 	})
 
-const targetNameChange=({target})=>{
-	setValue({...value,name:target.value})
-}
-const targetSurNameChange=({target})=>{
-	setValue({...value,surname:target.value})
-}
+
 	return(
 		<>
-		<FirstComponoment value={value} targetSurNameChange={targetSurNameChange} targetChange={targetNameChange} name={value.name} surname={value.surname} />
+		<FirstComponoment value={value}  name={value.name} surname={value.surname} />
 		</>
 	)
 }
