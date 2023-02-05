@@ -1,60 +1,33 @@
-import styles from './index.module.css'
-import Show from 'componomets/props'
-import {  useState } from 'react'
+import { useState } from "react"
+import styles from "./index.module.css"
+export const FirstComponoment=({value,targetNameChange})=>{
 
-	
+	return(
+		<>
+		<div className={styles.form}>
+			<input value={value} type="text" name="name" onChange={targetNameChange}  />
+			<div>{value}</div>
+			{/* <input type="text" name="surname"  /> */}
+			<button onClick={()=>{
+				console.log(value)
+			}}>ok</button>
+		</div>
+		</>
+	)
+}
 
-function States({size}){
-	const [input,setInput]=useState({
+export const SecondComponoment=()=>{
+	const [value,setValue]=useState({
 		name:"",
 		surname:""
 	})
 
-	
-
+const targetNameChange=({target})=>{
+	setValue({...value,name:target.value})
+}
 	return(
-	
 		<>
-			<div className={`${styles.form}`}>
-				<div>
-					<input style={{padding:`${size}px !important`}}  className={`togglewidth`} value={input.name} type="text"  onChange={({target})=>{
-			
-						setInput({...input,name:target.value})
-					}}/>	
-				</div>
-				<div>
-					<input value={input.surname} type="text"   onChange={({target})=>{
-						setInput({...input,surname:target.value})
-					}}/>
-				</div>
-				<div>
-				<Show clickleyende={()=>{
-					console.log(input)
-				}} text="Ok" />
-				</div>
-				<div>
-					<Show clickleyende={()=>{
-
-						console.log(UpperAndSize(input.name,input.surname))
-						 setInput({name:UpperAndSize(input.name,input.surname)[0],surname:UpperAndSize(input.name,input.surname)[1]})
-					}} text="all UppperCase" />
-				</div>
-			</div>
+		<FirstComponoment value={value} targetChange={targetNameChange} />
 		</>
 	)
-
-
-	
 }
-	function UpperAndSize(name,surname){
-	< States size={"40px"} />
-		if(name==="" || surname===""){
-			name='Siz Niye Adinizi Bos Saxlayirsin 😡'
-			surname='Siz Niye Soyadiniz Bos Saxlayirsin 😡'
-			
-		}
-		
-		return [name.toUpperCase(),surname[0].toUpperCase()+surname.slice(1,surname.length)]
-	}
-
-export default States

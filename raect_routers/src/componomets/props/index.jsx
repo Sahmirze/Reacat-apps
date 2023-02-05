@@ -1,6 +1,6 @@
 import styles from "./index.module.css"
 
-function Show(props){
+function Show({clickleyende,text}){
 	return(
 		<>
 		{/* <div className={`${styles.turk}`} style={
@@ -12,7 +12,7 @@ function Show(props){
 			{props.text}
 
 		</div> */}
-		<button onClick={props.clickleyende} >{props.text}</button>
+		<button onClick={clickleyende} >{text}</button>
 		</>
 	)
 }
