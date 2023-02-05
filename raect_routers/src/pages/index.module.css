@@ -1,0 +1,23 @@
+.notFound {
+    color: red;
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.head {
+    text-align: center;
+    background-color: lime;
+}
+
+.navbar a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.navbar a:hover {
+    color: red;
+}

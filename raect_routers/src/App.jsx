@@ -1,8 +1,8 @@
-
-import WebSiteRouting from "routes";
+import WebSiteRouting from "pages";
 function App() {
   return (
    <>
+ 
    <WebSiteRouting />
    </>
   );
