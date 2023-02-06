@@ -6,6 +6,7 @@ export const FirstComponoment=(props)=>{
 		ad:props.name,
 		soyad:props.surname
 	})
+	
 
 	return(
 		<>

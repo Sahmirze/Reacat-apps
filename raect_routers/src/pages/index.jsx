@@ -13,7 +13,7 @@ function WebSiteRouting(){
 			<Route path="/about" element={<About />} />
 			<Route path="/" element={<Home />} />
 			<Route path="*" element={<NotFound />} />
-			<Route path="/states" element={<SecondComponoment />} />
+			<Route path="/login" element={<SecondComponoment />} />
   	 	 </Routes>
   
 		</>
