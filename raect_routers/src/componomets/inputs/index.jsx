@@ -6,13 +6,10 @@ export const FirstComponoment=(props)=>{
 		ad:props.name,
 		soyad:props.surname
 	})
-	
 
 	return(
 		<>
 		<PageContainer>
-
-
 		<div className={styles.form}>
 			 <input value={input.ad} type="text" name="ad"  onChange={({target})=>{
 					setInput({...input,ad:target.value})

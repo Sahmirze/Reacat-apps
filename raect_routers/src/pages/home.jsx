@@ -4,7 +4,7 @@ function Home(){
 
 	return(
 	<PageContainer>
-      
+      <div>Home</div>
 	</PageContainer>
 	)
  }

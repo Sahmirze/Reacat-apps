@@ -1,6 +1,7 @@
+import { FirstComponoment, SecondComponoment } from "componomets/inputs"
 import PageContainer from "routes/PageContainer"
 
- function About(){
+export const  About=()=>{
 	return(
 	<PageContainer>
 		<div>About</div>
@@ -8,4 +9,6 @@ import PageContainer from "routes/PageContainer"
 	)
  }
 
- export default About
+
+
+
