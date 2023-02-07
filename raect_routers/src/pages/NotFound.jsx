@@ -4,6 +4,7 @@ function NotFound(){
 	return(
 		<>
 			<div className={styles.notFound}>404 Page NotFound</div>
+			<a href="/">Go Home</a>
 		</>
 	)
  }
