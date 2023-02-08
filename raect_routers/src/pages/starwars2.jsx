@@ -3,7 +3,10 @@ import { useEffect, useState } from "react"
 import PageContainer from "routes/PageContainer"
 
 function StarWars2(){
-	const [us,setUs]=useState({})
+	const [us,setUs]=useState({
+		country:"",
+		place:""
+	})
 	useEffect(()=>{
 		axios
 		.get(`https://api.zippopotam.us/us/33162`)
