@@ -8,7 +8,7 @@ function NavBar() {
 				<NavBarLink to="/about" text="About" />
 				<NavBarLink to="/login" text="Login" />
 				<NavBarLink to="/study" text="Study" />
-				{/* <NavBarLink to="/starwars" text="StarWars" /> */}
+				<NavBarLink to="/starwars2" text="StarWars2" />
 			</nav>
 	</>)
 }

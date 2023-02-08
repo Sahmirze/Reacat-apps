@@ -7,6 +7,7 @@ import NotFound from "./NotFound";
 import { Route, Routes } from "react-router-dom";
 import { Study } from "learn";
 import StarWars from "./starwars";
+import StarWars2 from "./starwars2";
 function WebSiteRouting(){
 	return(
 		<>
@@ -18,7 +19,7 @@ function WebSiteRouting(){
 			<Route path="/login" element={<SecondComponoment />} />
 			<Route path="/study" element={<Study />} />
 			<Route path="/starwars/:peopleId" element={<StarWars />} />
-
+			<Route path="/starwars2/" element={<StarWars2 />} />
   	 	 </Routes>
   
 		</>
