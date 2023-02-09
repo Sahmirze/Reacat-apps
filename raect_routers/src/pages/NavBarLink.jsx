@@ -9,7 +9,8 @@ function NavBar() {
 				<NavBarLink to="/login" text="Login" />
 				<NavBarLink to="/study" text="Study" />
 				<NavBarLink to="/api" text="Api" />
-			</nav>
+				<NavBarLink to="/starwarsdata" text="StarWarsData" />
+	</nav>
 	</>)
 }
 export default NavBar
