@@ -43,6 +43,7 @@ import axios from 'axios'
 			
 				<h4>Mass: {data.mass}</h4>
 				<h4>Skin Color: {data.skin_color}</h4>
+				<a href="/starwarsdata">go back</a>
 			</div>
 		
 		</PageContainer>

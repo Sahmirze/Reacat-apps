@@ -13,12 +13,16 @@ useEffect(()=>{
 },[])
 
 	return(
-	<PageContainer style={{
-		display:'flex',
-		flexWrap:'wrap',
-		gap:10
-	}}>
-     {
+	<PageContainer >
+		<div style={{
+			display:"flex",
+			flexWrap:"wrap",
+			gap:10,
+			justifyContent:"center",
+			marginTop:40
+		
+		}}>
+		{
 		data.map(({uid,name,url})=>{
 
 				return(
@@ -26,7 +30,7 @@ useEffect(()=>{
 				//  width:270,height:150, boxShadow:'0 0 10px black'}}
 				<Link  key={uid}
 				style={{display:'block',
-				 width:270,
+				 width:200,
 				 height:200, 
 				 boxShadow:'0 0 10px black',
 				 textDecoration:'none',
@@ -37,15 +41,16 @@ useEffect(()=>{
 				to={`/starwars/${uid}`}>
 				<h1 >{name}</h1>
 				<p >{uid}</p>
-				</Link>
+				
+				</Link>	
 					
-				
-			
-				
 			)
 	
 		})
 	}
+	
+		</div>
+    
 	</PageContainer>
 	)
  }

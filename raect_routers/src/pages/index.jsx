@@ -9,6 +9,7 @@ import { Study } from "learn";
 import {StarWars2, Api} from "./starwars2";
 import StarWarsPeople from "./starwars";
 import StarWarsData from "./starwarsdata";
+import MaterialUI from "./materialui";
 function WebSiteRouting(){
 	return(
 		<>
@@ -22,6 +23,7 @@ function WebSiteRouting(){
 			<Route path="/starwars/:peopleId" element={<StarWarsPeople />} />
 			<Route path="/starwarsdata" element={<StarWarsData />} />
 			<Route path="/api/" element={<Api />} />
+			<Route path="/miu" element={<MaterialUI/>} />
   	 	 </Routes>
   
 		</>
