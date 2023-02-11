@@ -8,7 +8,9 @@ function MaterialUI(){
 	return(
 	<PageContainer>
 	<Container >
-		<Grid container spacing={3}>
+		<Grid container spacing={3} sx={{
+			my:1
+		}}>
 		<Build />
 		<Build />
 		<Build />

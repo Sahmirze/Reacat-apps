@@ -31,7 +31,7 @@ useEffect(()=>{
 				<Link  key={uid}
 				style={{display:'block',
 				 width:200,
-				 height:200, 
+				 height:220, 
 				 boxShadow:'0 0 10px black',
 				 textDecoration:'none',
 				 color:'black',

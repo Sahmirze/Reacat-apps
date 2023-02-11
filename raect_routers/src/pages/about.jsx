@@ -3,7 +3,7 @@ import PageContainer from "routes/PageContainer"
 
 export const  About=()=>{
 	return(
-	<PageContainer>
+	<PageContainer >
 		<div>About</div>
 	</PageContainer>
 	)
