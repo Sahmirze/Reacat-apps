@@ -89,10 +89,10 @@ const [count,setCount]=useState([]);
 <TableCell>UserName</TableCell>
 <TableCell>Phone</TableCell>
 <TableCell>WebSite </TableCell>
-<TableCell>city</TableCell> 
-<TableCell>street</TableCell> 
-<TableCell>suite</TableCell> 
-<TableCell>zip</TableCell> 
+<TableCell>City</TableCell> 
+<TableCell>Street</TableCell> 
+<TableCell>Suite</TableCell> 
+<TableCell>Zip</TableCell> 
           </TableRow>
         </TableHead>
         <TableBody>
@@ -112,15 +112,7 @@ const [count,setCount]=useState([]);
     </TableContainer>
 
 </Container>
-		{/* <div>ShowUser</div>
-<select value={select} onChange={({target})=>{
-setSelect(target.value)
 
-}} >
-<option value="1">1</option>
-<option value="2">2</option>
-<option value="3">3</option>
-</select> */}
 	</PageContainer>
 	)
  }

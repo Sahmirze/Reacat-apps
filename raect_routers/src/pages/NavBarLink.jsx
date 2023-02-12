@@ -2,11 +2,9 @@ import { NavLink } from 'react-router-dom'
 import styles from 'pages/index.module.css'
 import NavBarLink from 'routes/NavLink'
 import { Stack } from '@mui/system'
-import { useContext } from 'react'
-import { DataContext } from 'context/DataContext'
+
 function NavBar() {
 
-	const data=useContext(DataContext)
 	
 	return(<>
 
