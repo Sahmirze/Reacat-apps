@@ -1,11 +1,16 @@
+
 import PageContainer from "routes/PageContainer"
 
-function Home(){
 
+
+function Home(){
 	return(
-	<PageContainer>
-      <div>Home</div>
-	</PageContainer>
+		<>	
+			<PageContainer>
+				<div>Home</div>
+			</PageContainer>
+		</>
+
 	)
  }
 

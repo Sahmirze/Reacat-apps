@@ -1,14 +1,14 @@
+import { useEffect } from "react"
 import { createContext } from "react"
+import axios from 'axios'
+import { useState } from "react"
 
 export const DataContext=createContext()
-const data={
-	ad:"Sako",
-	age:20
-}
+
 export const DataContextComponent=({children})=>{
 	return(
 		<>
-		<DataContext.Provider value={data}>
+		<DataContext.Provider value={'salam'}>
 		{children}
 		</DataContext.Provider>
 		</>
