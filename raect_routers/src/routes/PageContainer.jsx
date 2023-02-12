@@ -1,4 +1,5 @@
  import { AppBar } from '@mui/material'
+import { Container } from '@mui/system'
 import styles from 'pages/index.module.css'
 import NavBar from 'pages/NavBarLink'
 
@@ -7,8 +8,15 @@ import NavBar from 'pages/NavBarLink'
 	return(
 		<>
 		{/* <header className={styles.head} > */}
+	
 		<AppBar>
-		<NavBar />
+		<Container >
+			
+				<NavBar />
+			
+			
+		</Container>
+		
 		</AppBar>
 		
 		{/* //</header> */}
