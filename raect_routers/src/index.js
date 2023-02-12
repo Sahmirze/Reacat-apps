@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
+import { DataContextComponent } from 'context/DataContext';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
-    < BrowserRouter >
-    < CssBaseline />
-    <App />
-    </BrowserRouter>
+    <DataContextComponent>
+        < BrowserRouter >
+        < CssBaseline />
+        <App />
+        </BrowserRouter> 
+    </DataContextComponent>
+   
 
 );
