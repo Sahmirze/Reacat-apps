@@ -5,7 +5,6 @@ import { useState } from "react"
 
 
 export const DataContext=createContext()
-const data='er'
 
 
 
@@ -14,6 +13,7 @@ export const DataContextComponent=({children})=>{
 useEffect(()=>{
 axios.get('https://jsonplaceholder.typicode.com/users').then(({data})=>{
 // console.log(data)
+console.log(data)
 setData(data)
 }).catch((err)=>{
 console.log(err)
