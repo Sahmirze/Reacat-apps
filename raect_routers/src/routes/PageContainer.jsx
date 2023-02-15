@@ -10,7 +10,7 @@ import NavBar from 'pages/NavBarLink'
 		{/* <header className={styles.head} > */}
 	
 		<AppBar>
-		<Container >
+		<Container  >
 			
 				<NavBar />
 			
@@ -21,7 +21,7 @@ import NavBar from 'pages/NavBarLink'
 		
 		{/* //</header> */}
 		<main style={{
-			marginTop:40
+			marginTop:100
 		}}>{children}</main>
 		<footer></footer>
 		</>

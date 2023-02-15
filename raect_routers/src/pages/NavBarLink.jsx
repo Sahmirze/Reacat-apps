@@ -8,8 +8,8 @@ function NavBar() {
 	
 	return(<>
 
-	<nav className={styles.navbar}>
-		<Stack justifyContent={'space-between'} direction={'row'} flexWrap={'wrap'}>
+	<nav className={styles.navbar} >
+		<Stack justifyContent={'space-between'} direction={'row'}  >
 				<NavBarLink to="/" text="Home" />
 				<NavBarLink to="/about" text="About" />
 				<NavBarLink to="/login" text="Login" />

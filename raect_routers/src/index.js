@@ -10,10 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
     <>   
      <DataContextComponent> 
-<ModeContext>
+         <ModeContext>
           < BrowserRouter >
          < CssBaseline />
-         <App />
+              <App />
      </BrowserRouter> 
 </ModeContext>           
   </DataContextComponent>
