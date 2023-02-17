@@ -3,47 +3,134 @@ import PageContainer from "routes/PageContainer"
 import Frame from 'assist/Frame.svg'
 import Shape1 from 'assist/shape-1.svg'
 import Group from 'assist/Group.svg'
-import { Container } from "@mui/system"
-import { Box, CardMedia, Grid, Stack, Typography } from "@mui/material"
+import { Container, Stack } from "@mui/system"
+import HttpsIcon from '@mui/icons-material/Https';
+import Link from '@mui/material/Link'
+import EmailIcon from '@mui/icons-material/Email';
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import { Box,Button,Checkbox,Grid, InputAdornment, InputLabel,  Paper,TextField, Typography } from "@mui/material"
 function Home(){
 	return(
 		<>	
 			<PageContainer >
-				<Container     sx={{
-					minHeight:'80vh',
-				}}>
+				<Container >
 					<Grid container >
-						<Grid   sm={3}  sx={{
-							backgroundColor:'red',
-							width:"100%"
+						<Grid   md={3} sm={3}  sx={{
+							position:"relative",
+							width:"100%",
+							textAlign:{xs:"center"}
 							}}>
-						
-							<Grid item>
+						<Stack sx={{
+							flexDirection:{xs:"row"},
+							justifyContent:{xs:"space-between"}
+						}}>
+							<Box  sx={{
+								position:{sm:"absolute"},
+								top:{sm:0},
+								right:{sm:0},
+
+							}}>
 								<img src={Shape1} alt="" />
-							</Grid >
-							<Grid item>
+							</Box>
+							<Box  sx={{
+								position:{sm:"absolute"},
+								bottom:{sm:0},
+								right:{sm:0}
+							}}>
 								<img src={Frame} alt="" />
-							</Grid >
-						
-						
+							</Box>
+						</Stack>
+							
 						</Grid>
-						<Grid item  sm={6} sx={{
-							backgroundColor:'blue',
+						<Grid item  sm={7} md={6}  sx={{
 							width:"100%"
 
 						}}>
+							<Container  >
+								<Paper sx={{padding:"20px",maxWidth:450,margin:"0 auto"}} >
+								
+							
 							<Typography variant="h4" align="center">
 								Daxil Olun
 							</Typography>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, dolore. Ad aliquid iure rerum consectetur voluptatibus delectus culpa quod soluta maiores atque vel facere expedita omnis, ducimus, accusantium dolor, ratione beatae. Dolores excepturi ducimus magnam maiores accusamus, labore, nam atque aut eos nisi odio at reiciendis impedit. Autem rem quaerat facere minima veritatis consequatur labore placeat mollitia, nisi quibusdam animi illum rerum pariatur id ratione suscipit beatae molestias consectetur magnam sapiente veniam adipisci amet modi vero! Ea ullam in quisquam harum dolorem vitae tempore perferendis temporibus sunt dignissimos accusamus quaerat, delectus magnam iusto! Natus soluta saepe quos sapiente ex qui.
+						<Box>
+						
+							<InputLabel sx={{ color: "black",
+								    fontWeight: 600,padding:'10px 0'}} htmlFor="input-with-icon-adornment">
+									Email
+							</InputLabel>
+							<TextField fullWidth
+							id="outlined-adornment-amount"
+							placeholder="Email ünvanı"
+							InputProps={{
+								startAdornment: <InputAdornment position="start"><EmailIcon/></InputAdornment>,
+								}}
+							
+							/>
+						
+						</Box>
+						<Box sx={{padding:"20px 0"}}>
+						
+						<InputLabel sx={{ color: "black",
+							    fontWeight: 600,padding:'10px 0'}} htmlFor="input-with-icon-adornment">
+								Şifrə
+						</InputLabel>
+						<TextField fullWidth
+						placeholder="Şifrə"
+						id="outlined-adornment-amount"
+						InputProps={{
+							startAdornment: <InputAdornment position="start"><HttpsIcon/></InputAdornment>,
+							}}
+						
+						/>
+					
+					</Box>
+					<Stack direction={"row"} justifyContent="space-between" >
+						<Box>
+							<Checkbox/>
+						</Box>
+						<Typography sx={{
+						marginTop:'12px'
+					}}>
+					<Link href="#" underline="none" sx={{color:"black"}}>
+					Şifrənizi unutmusunuz?
+					</Link>
+						
+						
+						</Typography>
+					</Stack>
+
+					<Box sx={{textAlign:"center",margin:"15px 0"}}>
+					
+					<Button variant="contained">
+					Daxil ol <KeyboardArrowRightIcon/>
+					</Button>
+					</Box>
+
+					<Stack direction={'row'} justifyContent="center" gap={2}>
+					<Link href="#" underline="none">
+					Hesabınız yoxdur?
+					</Link><Link href="#" underline="none">
+					Qeydiyyatdan keçin
+					</Link>
+					</Stack>
+							</Paper>
+							</Container>
+							
 						</Grid>
-						<Grid item  sm={3} sx={{
-							backgroundColor:'yellow',
-							width:"100%"
+						<Grid item    md={3} sm={2} sx={{
+							
+							width:"100%",
+							position:"relative",
+							textAlign:"center"
 						}}>
-							<item>
+							<Box sx={{
+								marginTop:{xs:10},
+								position:{sm:"absolute"},
+								top:{sm:"20%"},
+							}}>
 								<img src={Group} alt="" />
-							</item>
+							</Box>
 							
 						</Grid>
 
