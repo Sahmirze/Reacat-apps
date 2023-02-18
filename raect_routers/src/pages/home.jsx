@@ -8,6 +8,7 @@ import HttpsIcon from '@mui/icons-material/Https';
 import Link from '@mui/material/Link'
 import EmailIcon from '@mui/icons-material/Email';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
 import { Box,Button,Checkbox,Grid, InputAdornment, InputLabel,  Paper,TextField, Typography } from "@mui/material"
 function Home(){
 	return(
@@ -28,7 +29,6 @@ function Home(){
 								position:{sm:"absolute"},
 								top:{sm:0},
 								right:{sm:0},
-
 							}}>
 								<img src={Shape1} alt="" />
 							</Box>
@@ -40,21 +40,16 @@ function Home(){
 								<img src={Frame} alt="" />
 							</Box>
 						</Stack>
-							
 						</Grid>
 						<Grid item  sm={7} md={6}  sx={{
 							width:"100%"
-
 						}}>
 							<Container  >
 								<Paper sx={{padding:"20px",maxWidth:450,margin:"0 auto"}} >
-								
-							
 							<Typography variant="h4" align="center">
 								Daxil Olun
 							</Typography>
 						<Box>
-						
 							<InputLabel sx={{ color: "black",
 								    fontWeight: 600,padding:'10px 0'}} htmlFor="input-with-icon-adornment">
 									Email
@@ -67,10 +62,35 @@ function Home(){
 								}}
 							
 							/>
-						
 						</Box>
 						<Box sx={{padding:"20px 0"}}>
-						
+						<TextField
+                sx={{
+                    m: 10,
+                    '& input': {
+                        paddingLeft: '40px'
+                    }
+                }}
+                InputProps={{
+                    startAdornment: <Box
+                        sx={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            height: '100%',
+                            width: 50,
+                            backgroundColor: "#395185",
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            borderTopLeftRadius: 'inherit',
+                            borderBottomLeftRadius: 'inherit'
+                        }}
+                    >
+                        
+                    </Box>
+                }}
+            />
 						<InputLabel sx={{ color: "black",
 							    fontWeight: 600,padding:'10px 0'}} htmlFor="input-with-icon-adornment">
 								Şifrə
@@ -83,7 +103,6 @@ function Home(){
 							}}
 						
 						/>
-					
 					</Box>
 					<Stack direction={"row"} justifyContent="space-between" >
 						<Box>
@@ -95,18 +114,13 @@ function Home(){
 					<Link href="#" underline="none" sx={{color:"black"}}>
 					Şifrənizi unutmusunuz?
 					</Link>
-						
-						
-						</Typography>
+					</Typography>
 					</Stack>
-
 					<Box sx={{textAlign:"center",margin:"15px 0"}}>
-					
 					<Button variant="contained">
 					Daxil ol <KeyboardArrowRightIcon/>
 					</Button>
 					</Box>
-
 					<Stack direction={'row'} justifyContent="center" gap={2}>
 					<Link href="#" underline="none">
 					Hesabınız yoxdur?
@@ -130,15 +144,10 @@ function Home(){
 								top:{sm:"20%"},
 							}}>
 								<img src={Group} alt="" />
-							</Box>
-							
+							</Box>	
 						</Grid>
-
 					</Grid>
-
-
 				</Container>
-
 			</PageContainer>
 		</>
 
