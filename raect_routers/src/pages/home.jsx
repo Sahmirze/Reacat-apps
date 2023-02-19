@@ -1,14 +1,10 @@
 
 import PageContainer from "routes/PageContainer"
-import Frame from 'assist/Frame.svg'
-import Shape1 from 'assist/shape-1.svg'
-import Group from 'assist/Group.svg'
+import Frame from 'assets/Frame.svg'
+import Shape1 from 'assets/shape-1.svg'
+import Group from 'assets/Group.svg'
 import { Container, Stack } from "@mui/system"
-import HttpsIcon from '@mui/icons-material/Https';
 import Link from '@mui/material/Link'
-import EmailIcon from '@mui/icons-material/Email';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-
 import { Box,Button,Checkbox,Grid, InputAdornment, InputLabel,  Paper,TextField, Typography } from "@mui/material"
 function Home(){
 	return(
@@ -58,7 +54,7 @@ function Home(){
 							id="outlined-adornment-amount"
 							placeholder="Email ünvanı"
 							InputProps={{
-								startAdornment: <InputAdornment position="start"><EmailIcon/></InputAdornment>,
+								startAdornment: <InputAdornment position="start"></InputAdornment>,
 								}}
 							
 							/>
@@ -72,7 +68,8 @@ function Home(){
                     }
                 }}
                 InputProps={{
-                    startAdornment: <Box
+                    startAdornment:
+				 <Box
                         sx={{
                             position: 'absolute',
                             top: 0,
@@ -99,7 +96,7 @@ function Home(){
 						placeholder="Şifrə"
 						id="outlined-adornment-amount"
 						InputProps={{
-							startAdornment: <InputAdornment position="start"><HttpsIcon/></InputAdornment>,
+							startAdornment: <InputAdornment position="start"></InputAdornment>,
 							}}
 						
 						/>
@@ -118,7 +115,7 @@ function Home(){
 					</Stack>
 					<Box sx={{textAlign:"center",margin:"15px 0"}}>
 					<Button variant="contained">
-					Daxil ol <KeyboardArrowRightIcon/>
+					Daxil ol 
 					</Button>
 					</Box>
 					<Stack direction={'row'} justifyContent="center" gap={2}>
