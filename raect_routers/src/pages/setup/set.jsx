@@ -1,6 +1,6 @@
 import { Grid, Paper, Typography,Box, CardMedia, createTheme ,ThemeProvider, AppBar, Toolbar, IconButton, Button} from "@mui/material";
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import brooklyn from '../../assist/brooklyn.jpg';
+// import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import brooklyn from '../../assets/brooklyn.jpg';
 import Rating from '@mui/material/Rating';
 
 const theme=createTheme({
@@ -50,7 +50,7 @@ export const Build=({text,img,})=>{
 					alignItems:'center'
 					
 				}}>
-					<AccessTimeIcon fontSize="small"></AccessTimeIcon>	
+					{/* <AccessTimeIcon fontSize="small"></AccessTimeIcon>	 */}
 				<Typography  variant="body2" component='p'>
 					5 hours
 				</Typography>

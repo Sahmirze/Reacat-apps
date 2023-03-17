@@ -60,34 +60,7 @@ function Home(){
 							/>
 						</Box>
 						<Box sx={{padding:"20px 0"}}>
-						<TextField
-                sx={{
-                    m: 10,
-                    '& input': {
-                        paddingLeft: '40px'
-                    }
-                }}
-                InputProps={{
-                    startAdornment:
-				 <Box
-                        sx={{
-                            position: 'absolute',
-                            top: 0,
-                            left: 0,
-                            height: '100%',
-                            width: 50,
-                            backgroundColor: "#395185",
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            borderTopLeftRadius: 'inherit',
-                            borderBottomLeftRadius: 'inherit'
-                        }}
-                    >
-                        
-                    </Box>
-                }}
-            />
+
 						<InputLabel sx={{ color: "black",
 							    fontWeight: 600,padding:'10px 0'}} htmlFor="input-with-icon-adornment">
 								Şifrə
